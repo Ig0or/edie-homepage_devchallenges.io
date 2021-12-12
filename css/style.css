@@ -1,0 +1,272 @@
+/* ------ RESET ------ */
+h1,
+ul,
+li,
+body,
+p,
+img,
+span,
+form,
+input,
+button,
+h3,
+h2,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+a:hover,
+button:hover {
+    opacity: 70%;
+}
+
+/* ------ HEADER ------ */
+.header {
+    padding: 42px 52px 0 52px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__name {
+    font-family: "Heebo";
+    font-size: 2.25rem;
+    color: #333333;
+}
+
+.header__menu ul {
+    display: flex;
+}
+
+.header__menu li + li {
+    margin-left: 40px;
+}
+
+.header__menu li a {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+/* ------ SECTION HOME ------ */
+.home {
+    padding: 0 32px;
+}
+
+.home__title {
+    margin-bottom: 16px;
+    margin-left: 20%;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #2d9cdb;
+}
+
+.home__text {
+    margin-left: 20%;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #333333;
+}
+
+.home img {
+    border-radius: 18px;
+    width: 100%;
+    margin: 42px 0;
+}
+
+.home__div {
+    margin-top: 42px;
+    margin-left: 20%;
+    max-width: 370px;
+}
+
+.home__div p {
+    color: #4f4f4f;
+    font-size: 1.125rem;
+    margin-bottom: 42px;
+}
+
+.home__div span {
+    font-weight: 500;
+    color: #828282;
+    font-size: 0.87rem;
+}
+
+.home__div__form {
+    display: flex;
+    max-width: fit-content;
+    margin: 10px 0 200px 0;
+    padding: 4px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+}
+
+.home__div__form input {
+    background-color: #f2f2f2;
+    padding-left: 15px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #bdbdbd;
+    font-family: "Poppins";
+    outline: none;
+    border: none;
+}
+
+.home__div__form button {
+    padding: 10px 20px;
+    font-family: "Poppins";
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #f2f2f2;
+    background-color: #2d9cdb;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* ------ SECTION SERVICES ------ */
+.services {
+    padding: 0 10%;
+}
+
+.services__title {
+    margin-bottom: 42px;
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 54px;
+    color: #333333;
+}
+
+.services__div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 194px;
+}
+
+.services__div div + div {
+    margin-left: 40px;
+}
+
+.services__div__child {
+    padding: 46px 30px;
+    flex: 1 1 220px;
+}
+
+.services__div__child:hover {
+    box-shadow: 0 10px 30px 0 rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+}
+
+.services__div__child__icon {
+    display: inline-block;
+    padding: 15px;
+    background-color: #2d9cdb;
+    color: white;
+    border-radius: 16px;
+}
+
+.services__div__child:nth-of-type(2) .services__div__child__icon {
+    background-color: #27ae60;
+}
+
+.services__div__child:nth-of-type(3) .services__div__child__icon {
+    background-color: #eb5757;
+}
+
+.services__div__child__stack {
+    margin-top: 35px;
+    font-size: 1.5rem;
+    color: #333333;
+    font-weight: 700;
+}
+
+.services__div__child__desc {
+    margin-top: 24px;
+    color: #4f4f4f;
+    font-size: 1rem;
+}
+
+.services__div__child__button {
+    margin-top: 30px;
+    padding: 8px;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #e0e0e0;
+    color: #828282;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.services__div__child__button:hover {
+    color: #fff;
+    background-color: #2d9cdb;
+}
+
+/* ------ SECTION WORKS ------ */
+.works {
+    padding: 0 10%;
+}
+
+.works__title {
+    margin-bottom: 12px;
+    font-size: 2.25rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+.works__div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.works__div__child img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.works__div__child span {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #828282;
+}
+
+.works__div__child h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.works__div__child:nth-of-type(2n + 1){
+    padding-top: 176px;
+}
+
+.works__link{
+    grid-column: 2 / 2;
+    text-align: end;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #2d9cdb;
+}
