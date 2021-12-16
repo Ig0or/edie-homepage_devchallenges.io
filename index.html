@@ -22,16 +22,29 @@
             <h1 class="header__name">Edie</h1>
             <nav class="header__menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Our Works</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Our Works</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <span class="material-icons header__menu-mobile-icon">menu</span>
         </header>
 
-        <section class="home">
+        <div class="menu-mobile">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Our Works</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="home" id="home">
             <h2 class="home__title">Unhappy with your website?</h2>
             <p class="home__text">
                 We create beautiful<br />and fast web services
@@ -53,7 +66,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <h2 class="services__title">We offer high<br />demand services</h2>
             <div class="services__div">
                 <div class="services__div__child">
@@ -100,7 +113,7 @@
             </div>
         </section>
 
-        <section class="works">
+        <section class="works" id="works">
             <h2 class="works__title">Good design means<br />good business</h2>
             <div class="works__div">
                 <div class="works__div__child">
@@ -131,54 +144,64 @@
             </div>
         </section>
 
-        <section>
-            <div>
+        <section class="clients" id="clients">
+            <div class="clients__info">
                 <h2>Meet the team</h2>
                 <p>We are chilled<br />and a laidback<br />team</p>
-                <span
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </span>
             </div>
 
-            <div>
+            <div class="clients__imgs">
                 <img src="img/person3.png" />
                 <img src="img/person1.png" />
                 <img src="img/person2.png" />
             </div>
         </section>
 
-        <section>
+        <section class="contact" id="contact">
             <p>
                 “Fast and outstanding resutls. Edie understands their customer’s
                 needs. They have a young and talented team.”
             </p>
-            <div>
+            <div class="contact__person">
                 <img src="img/person4.png" />
-                <span>Carlos Tran</span>
-                <span>The Decorate Gatsby </span>
+                <span class="contact__person__name">Carlos Tran</span>
+                <span class="contact__person__job">The Decorate Gatsby </span>
             </div>
         </section>
 
-        <footer>
-            <div>
-                <nav>
+        <footer class="footer">
+            <div class="footer__info">
+                <nav class="footer__info__menu">
                     <ul>
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>Our Works</li>
-                        <li>Clients</li>
-                        <li>Contact</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Our Works</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
 
-                <div>
-                    <span>Edie</span>
-                    <a href="#"><img src="img/icons/instagram.svg" alt="" /></a>
-                    <a href="#"><img src="img/icons/linkedin.svg" alt="" /></a>
-                    <a href="#"><img src="img/icons/twitter.svg" alt="" /></a>
+                <div class="footer__info__links">
+                    <div>
+                        <span>Edie</span>
+                    </div>
+                    <div>
+                        <a href="#"
+                            ><img src="img/icons/instagram.svg" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="img/icons/linkedin.svg" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="img/icons/twitter.svg" alt=""
+                        /></a>
+                    </div>
                 </div>
 
-                <div>
+                <div class="footer__info__contact">
                     <p>Want us to contact you?</p>
                     <form>
                         <input type="text" placeholder="Email" />
@@ -187,7 +210,9 @@
                 </div>
             </div>
 
-            <p>created by Ig0or - devChallenges.io</p>
+            <p class="footer__copy">created by Ig0or - devChallenges.io</p>
         </footer>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
