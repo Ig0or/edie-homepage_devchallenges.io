@@ -546,7 +546,6 @@ button:hover {
         margin: 0 0 100px 0;
         padding: 0;
         background-color: #fff;
-
     }
 
     .home__div__form input {
@@ -561,4 +560,22 @@ button:hover {
     }
 
     /* ------ SECTION SERVICES ------ */
+
+    .services__title {
+        font-size: 1.5rem;
+        line-height: 36px;
+    }
+
+    .services__div {
+        margin-bottom: 0px;
+    }
+
+    .services__div div + div {
+        margin-left: 0px;
+    }
+
+    .services__div__child {
+        padding: 0px;
+        margin-bottom: 120px;
+    }
 }
