@@ -380,7 +380,7 @@ button:hover {
     font-size: 1.125rem;
 }
 
-/* FOOTER */
+/* ------ FOOTER ------ */
 .footer {
     padding: 46px 10% 0 10%;
     background-color: #100e1d;
@@ -477,7 +477,8 @@ button:hover {
 
     .header__menu-mobile-icon {
         display: inline;
-        cursor: pointer;
+        background: none;
+        border: none;
     }
 
     .header__menu-mobile-icon:hover {
@@ -561,6 +562,11 @@ button:hover {
 
     /* ------ SECTION SERVICES ------ */
 
+    .services {
+        padding: 0 10px;
+        margin-left: 40px;
+    }
+
     .services__title {
         font-size: 1.5rem;
         line-height: 36px;
@@ -577,5 +583,120 @@ button:hover {
     .services__div__child {
         padding: 0px;
         margin-bottom: 120px;
+        flex: 1 0 100%;
+    }
+
+    /* ------ SECTION WORKS ------ */
+
+    .works {
+        padding: 0 10px;
+    }
+
+    .works__title {
+        margin-bottom: 45px;
+        margin-left: 40px;
+        font-size: 1.5rem;
+    }
+
+    .works__div {
+        grid-template-columns: 1fr;
+    }
+
+    .works__div div + div {
+        margin-top: 36px;
+    }
+
+    .works__div__child h3 {
+        font-size: 1.125rem;
+    }
+
+    .works__div__child:nth-of-type(2n + 1) {
+        padding-top: 0;
+    }
+
+    .works__link {
+        margin-top: 36px;
+        grid-column: 1;
+        text-align: start;
+        font-size: 1.115rem;
+    }
+
+    /* ------ SECTION CLIENTS ------*/
+    .clients {
+        margin: 100px 0;
+        padding: 0 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .clients__imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img1 img2"
+            ". img3";
+        gap: 24px;
+        justify-self: stretch;
+    }
+
+    .clients__imgs img:nth-of-type(1) {
+        grid-area: img1;
+        margin-top: 70px;
+    }
+
+    .clients__imgs img:nth-of-type(2) {
+        max-width: 80%;
+        grid-area: img2;
+        margin-top: 0px;
+    }
+
+    .clients__imgs img:nth-of-type(3) {
+        max-width: 90%;
+        grid-area: img3;
+        margin-top: -110px;
+    }
+
+    /* ------ SECTION CONTACT ------ */
+    .contact {
+        padding: 0 10px;
+        margin-bottom: 100px;
+    }
+
+    .contact p {
+        max-width: 100%;
+        margin-bottom: 16px;
+        font-size: 1.5rem;
+    }
+
+    /* ------ FOOTER ------ */
+    .footer {
+        padding: 36px 50px 0 50px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+
+    .footer__info > div {
+        margin-top: 64px;
+    }
+
+    .footer__copy {
+        margin-top: 160px;
+    }
+
+    .footer__info__contact form {
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .footer__info__contact input {
+        padding-left: 5px;
+        font-size: 0.875rem;
+        border-radius: 12px;
+        max-width: 220px;
+    }
+
+    .footer__info__contact button {
+        font-size: 0.875rem;
     }
 }
