@@ -464,11 +464,10 @@ button:hover {
 }
 
 /* ------ MEDIA QUERY ------ */
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     /* ------ HEADER ------ */
     .header {
-        padding: 13px 10px;
-        margin: 0;
+        margin-bottom: 40px;
     }
 
     .header__menu {
@@ -479,6 +478,7 @@ button:hover {
         display: inline;
         background: none;
         border: none;
+        cursor: pointer;
     }
 
     .header__menu-mobile-icon:hover {
@@ -506,6 +506,23 @@ button:hover {
         padding: 15px 0;
         margin-bottom: 40px;
         background-color: #100e1d;
+    }
+
+    /* ------ SECTION SERVICES ------ */
+    .services__div div + div {
+        margin-left: 0px;
+    }
+
+    .services__div__child:nth-of-type(2){
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    /* ------ HEADER ------ */
+    .header {
+        padding: 13px 10px;
+        margin: 0;
     }
 
     /* ------ SECTION HOME ------ */
@@ -561,13 +578,12 @@ button:hover {
     }
 
     /* ------ SECTION SERVICES ------ */
-
     .services {
         padding: 0 10px;
-        margin-left: 40px;
     }
 
     .services__title {
+        margin-left: 40px;
         font-size: 1.5rem;
         line-height: 36px;
     }
@@ -577,13 +593,13 @@ button:hover {
     }
 
     .services__div div + div {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
     .services__div__child {
-        padding: 0px;
-        margin-bottom: 120px;
-        flex: 1 0 100%;
+        margin: 0 20px 120px 20px;
+        padding: 20px;
+        flex: 1 0 calc(100% - 40px);
     }
 
     /* ------ SECTION WORKS ------ */
